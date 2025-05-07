@@ -77,6 +77,7 @@ const obj2 = { 3: "c", 4: "d" }
 const obj3 = {...obj1, ...obj2}
 // console.log(obj3);
 
+// database se jab data aat hai to kuchh is tarah se aata hai
 const users = [
     {
         id:1,
@@ -93,17 +94,21 @@ const users = [
 ]
 // console.log(users[1].email);
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser)); // it will return array of keys
-console.log(Object.values(tinderUser)); // it will retrun array of values
-console.log(Object.entries(tinderUser)); // array return hoga aur array k ander ek ek key value pair ka array milega
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser)); // it will return array of keys
+// console.log(Object.values(tinderUser)); // it will retrun array of values
+// console.log(Object.entries(tinderUser)); // array return hoga aur array k ander ek ek key value pair ka array milega
 
+// Object Destructuring
+const course = {
+    courseName : "Javascript",
+    price : 499,
+    courseInstructor : "Arbaaz"
+}
+console.log(course);
 
+// const {courseName} = course
+// console.log(courseName);
 
-
-
-
-
-
-
-
+const {courseName : name} = course
+console.log(name);
